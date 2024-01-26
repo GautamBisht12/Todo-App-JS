@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "futura";
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  background-color: aqua;
+}
+
+.center {
+  width: 70%;
+  min-height: 100vh;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  /* padding: 50px 10px; */
+  /* justify-content: center; */
+  flex-direction: column;
+}
+
+.greeting {
+  margin: 20px 0 10px 0;
+  /* background-color: pink; */
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.greeting h2 {
+  /* background-color: blue; */
+  text-align: center;
+  width: 100%;
+}
+
+#name {
+  font-size: 25px;
+  outline: none;
+  border: none;
+  width: 40%;
+  padding: 10px;
+  background-color: transparent;
+  color: blue;
+}
+.create-todo {
+  margin: 20px 0;
+  /* background-color: white; */
+  width: 70%;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.create-todo #content {
+  width: 80%;
+  padding: 20px;
+  /* background-color: lawngreen; */
+  outline: none;
+  border: none;
+  border-radius: 10px;
+}
+.addTodo {
+  padding: 19px 16px;
+  border: none;
+  border-radius: 10px;
+  /* background-color: aquamarine; */
+  cursor: pointer;
+}
+.addTodo:hover {
+  background-color: rgb(34, 136, 200);
+}
+.create-todo h2 {
+  margin: 20px 0;
+}
+.todo-list {
+  text-align: center;
+  margin: 20px 0;
+  /* background-color: khaki; */
+  width: 90%;
+}
+
+.todo-item {
+  display: flex;
+  /* background-color: blueviolet; */
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.todo-content {
+  width: 70%;
+  border-radius: 10px;
+  background-color: white;
+  margin: 10px;
+}
+.show-todo {
+  width: 100%;
+  background-color: transparent;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+}
+.done {
+  text-decoration: line-through;
+  background-color: rgb(32, 192, 32);
+}
+
+.edit,
+.delete {
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  background-color: green;
+}
+.delete {
+  background-color: red;
+}
+.edit:hover {
+  scale: 1.1;
+}
+.delete:hover {
+  scale: 1.1;
+}
+.todo-list h3 {
+  margin: 20px 0 10px 0;
+}
