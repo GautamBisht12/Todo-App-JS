@@ -4,52 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main class="app">
       <div class="center">
-      <section class="greeting">
-        <h2>
-          What's up , <input type="text" id="name" placeholder="Name here" />
-        </h2>
-      </section>
+        <section class="greeting">
+          <h2>What's up ,</h2>
+          <input type="text" id="name" placeholder="Name here" />
+        </section>
 
-      <section class="create-todo">
-        <h2>Create a todo</h2>
-        <form id="new-todo-form">
-          <input
-            type="text"
-            name="content"
-            id="content"
-            placeholder="Add Todo..."
-          />
-          <input type="submit"  class="addTodo" value="Add todo">
-        </form>
+        <section class="create-todo">
+          <h2>Create a todo</h2>
+          <form id="new-todo-form">
+            <input
+              type="text"
+              name="content"
+              id="content"
+              placeholder="Add Todo..."
+            />
+            <input type="submit" class="addTodo" value="Add todo" />
+          </form>
+        </section>
 
-      </section>
-      
+        <section class="todo-list">
+          <h3>TODO LIST</h3>
+          <div class="list" id="todo-list">
+            <div class="todo-item">
+              <label>
+                <input type="checkbox" class="checkbox" />
+              </label>
 
-      <section class="todo-list">
-        <h3>TODO LIST</h3>
-        <div class="list" id="todo-list">
-          <div class="todo-item">
-            <label>
-              <input type="checkbox" class="checkbox" />
-            </label>
+              <div class="todo-content">
+                <input
+                  type="text"
+                  class="show-todo"
+                  value="Make a video"
+                  readonly
+                />
+              </div>
 
-            <div class="todo-content  ">
-              <input type="text" class="show-todo  " value="Make a video" readonly>
-            </div>
-
-            <div class="actions">
-              <button class="edit ">Edit</button>
-              <button class="delete" >Delete</button>
+              <div class="actions">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
     </main>
   </body>
   <script src="script.js"></script>
